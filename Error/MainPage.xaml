@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Error.MainPage"
+             xmlns:vm="clr-namespace:Error.ViewModels"
+             xmlns:community="http://xamarin.com/schemas/2020/toolkit">
+
+    <ContentPage.BindingContext>
+        <vm:MainVm />
+    </ContentPage.BindingContext>
+
+    <NavigationPage.TitleView>
+        <StackLayout BackgroundColor="Red"
+                     HorizontalOptions="CenterAndExpand"
+                     community:TouchEffect.Command="{Binding Nav}">
+
+            <Label Text="frekfoprekforekwf" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+</ContentPage>
